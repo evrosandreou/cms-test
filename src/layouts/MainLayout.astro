@@ -1,0 +1,33 @@
+---
+let {title} = Astro.props
+---
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <slot></slot>
+    </main>
+
+    <!-- Footer -->
+    <footer>This is a footer</footer>
+</body>
+
+</html>
